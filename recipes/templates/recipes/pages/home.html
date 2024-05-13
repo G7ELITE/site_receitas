@@ -2,17 +2,14 @@
 
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header-container">
-            <h1>
-                <a href="/">
-                    <i class="fa fa-address-book"></i>
-                    <span>Recipes {{ name }}</span>
-                </a>
-            </h1>
+    {% include "recipes/patials/header.html" %}
+
+    <div class="search-container">
+        <div class="container">
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="search">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button> 
+            </form>
         </div>
-    </header>
-    
-    
 </body>
 </html>
